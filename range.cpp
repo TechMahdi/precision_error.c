@@ -7,13 +7,14 @@ int main ()
     cout.tie(NULL);
     int a,b,c;
     cin>>a>>b>>c;
-    if(a<b<c)
+
+    if(a<b && b<c)
     {
-        cout<<"yes"<<endl;
+        cout<<"Yes"<<endl;
     }
     else
     {
-        cout<<"no"<<endl;
+        cout<<"No"<<endl;
     }
 
     return 0;
