@@ -9,22 +9,22 @@ int main ()
     long long int n;
     cin>>n;
     long long arr[n];
-    
+
     for(long long i =0;i<n;i++)
     {
         cin>>arr[i];
     }
-    sort(arr, arr+n);
+   // sort(arr, arr+n);
       long long  int max =arr[0],c=0;
 
-       for(long long i =0;i<n;i++)
+       for(long long i =1;i<n;i++)
     {
         if(max<arr[i])
         {
             max=arr[i];
         }
     }
-       for(long long i =0;i<n;i++)
+       for(long long i =1;i<n;i++)
     {
         if(max==arr[i])
         {
